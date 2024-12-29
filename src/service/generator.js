@@ -85,8 +85,8 @@ export const generateImage = async (point, fileName) => {
       }
     });
 
-    await page.waitForSelector("button#model-black-forest-labs-flux-schnell");
-    await page.click("button#model-black-forest-labs-flux-schnell");
+    await page.waitForSelector("button#model-bytedance-sdxl-lightning-4step");
+    await page.click("button#model-bytedance-sdxl-lightning-4step");
 
     await new Promise((resolve) => setTimeout(resolve, 5000));
     await page.waitForSelector('input[name="prompt"]');
@@ -95,10 +95,19 @@ export const generateImage = async (point, fileName) => {
       input.value = "";
     });
 
+    const prompts = [
+      "A confident South Indian woman with dark, lustrous hair styled in a traditional braid, wearing a vibrant silk saree with golden borders. She is sitting cross-legged in a serene natural setting, holding a cup of coffee, her expression calm and empathetic, gazing slightly to the side. The environment is softly lit by a golden sunset, emphasizing her warm and welcoming demeanor. - ",
+      "A modern South Indian woman with glowing dusky skin and expressive almond-shaped eyes, wearing a casual yet stylish kurti and jeans. She is leaning on a wooden table in a cozy café, headphones on her neck, her eyes focused as if attentively listening. A warm glow from fairy lights surrounds the café’s rustic decor. - ",
+      "A poised South Indian woman in a white and gold kasavu saree, sitting on a balcony with green potted plants around. She is barefoot, her posture relaxed, and her hands resting lightly on her lap, reflecting serenity. Her face carries a gentle smile as if she’s silently acknowledging someone’s story. - ",
+      "A South Indian woman with wavy shoulder-length hair, wearing a maroon salwar kameez, seated on a wooden bench near a calm riverbank. Her body language is open, with one hand resting on her knee, and her eyes softly meeting the viewer's gaze as if silently encouraging openness and understanding. - ",
+      "A charismatic South Indian woman with sharp features, wearing a casual cotton saree in earthy tones, sitting on a wicker chair under a tree. She is holding a pen and a journal, looking up as if attentively listening to someone. Dappled sunlight filters through the leaves, creating a warm, intimate atmosphere. - ",
+    ];
+    const randomIndex = Math.floor(Math.random() * prompts.length);
+
     await new Promise((resolve) => setTimeout(resolve, 1000));
     await page.type(
       'input[name="prompt"]',
-      `Create an image based on the quote for Instagram post in with a carton character doind the quote '${point}'`
+      `${prompts[randomIndex]} '${point}'`
     );
 
     await page.waitForSelector('button[type="submit"]');

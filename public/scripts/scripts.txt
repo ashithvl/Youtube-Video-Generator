@@ -265,22 +265,22 @@
       "Surround yourself with positivity."
     ],
     "voiceOverScript": "Happiness is a choice, and you have the power to choose it. Here's a fact: when you smile often and mean it, you release endorphins that boost your mood. Another fact: practicing gratitude daily can rewire your brain to focus on the positive. And did you know that surrounding yourself with positivity can be contagious? By incorporating these habits into your daily routine, you can boost your happiness and live a more fulfilling life.",
-    "uploaded": false
+    "uploaded": true
   },
   {
     "title": "Fact: How to Boost Your Happiness",
-    "description": "Discover the surprising link between exercise and happiness.",
+    "description": "Did you know that happiness is a choice?",
     "tags": [
       "happiness",
-      "exercise",
+      "mindfulness",
       "wellness"
     ],
     "points": [
-      "Regular exercise boosts endorphins, the happy hormones.",
-      "Exercise releases tension and reduces stress.",
-      "Exercise improves sleep quality, leading to a happier mood."
+      "Smile often and mean it.",
+      "Practice gratitude daily.",
+      "Surround yourself with positivity."
     ],
-    "voiceOverScript": "Hey there! Did you know that exercising regularly can boost your happiness? It's true! Regular exercise releases endorphins, those happy hormones we all love. But that's not all, exercise also helps release tension and reduces stress. And let's not forget about the sleep quality, a good night's sleep can improve your mood and make you feel happier. So, make sure to exercise regularly and boost your happiness!",
-    "uploaded": false
+    "voiceOverScript": "Happiness is a choice, and you have the power to choose it. Here's a fact: when you smile often and mean it, you release endorphins that boost your mood. Another fact: practicing gratitude daily can rewire your brain to focus on the positive. And did you know that surrounding yourself with positivity can be contagious? By incorporating these habits into your daily routine, you can boost your happiness and live a more fulfilling life.",
+    "uploaded": true
   }
 ]
